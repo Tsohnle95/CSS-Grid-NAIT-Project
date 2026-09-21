@@ -1,0 +1,74 @@
+@use 'colours' as *;
+
+footer {
+    background-color: $grey-900;
+    color: $grey-50;
+}
+
+// FOOTER CSS
+footer {
+    h2 {
+        font-size: clamp(2.25rem, 1.5625rem + 3.4375vw, 5rem);
+        margin-bottom: 1rem;
+    }
+
+    ul li a svg {
+        margin-right: .2rem;
+    }
+
+    a:hover,
+    a:focus {
+        text-decoration: underline;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .flex-container div {
+        flex: 1 0 12rem;
+        margin: 1rem 0;
+    }
+}
+
+@media (width > 512px) {
+    footer {
+        padding: 2rem;
+    }
+}
+
+@media (width > 1000px) {
+    footer {
+        padding: 3rem;
+    }
+
+    .flex {
+        display: flex;
+        gap: 2rem;
+    }
+
+    footer h2 {
+        text-align: left;
+    }
+
+    footer .inner-container {
+        padding: 0 2rem;
+    }
+}
+
+@media (width > 1300px) {
+    footer h2 {
+        font-size: 120px;
+    }
+}

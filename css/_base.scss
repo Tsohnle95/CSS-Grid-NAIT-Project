@@ -1,0 +1,48 @@
+@use 'colours' as *;
+@use 'mixins' as *;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+// HERO CSS 
+.hero {
+    .inner-container {
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            display: inline-block;
+            color: $fire;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+}

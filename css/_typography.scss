@@ -1,0 +1,26 @@
+h1,
+h2 {
+    font-family: "Fraunces", serif;
+}
+
+h1 {
+    font-size: clamp(1.75rem, 1.3125rem + 0.9375vw, 2.25rem);
+    padding: .2rem 0;
+}
+
+h2 {
+    font-size: clamp(2rem, 1.3281rem + 3.3594vw, 4.6875rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 0.5625rem + 3.4375vw, 3rem);
+}
+
+.itinerary h3 {
+    font-size: clamp(1.25rem, 1.1875rem + 0.3125vw, 1.5rem);
+    margin-bottom: 1rem;
+}
+
+.itinerary>.inner-container .itinerary-subheading {
+    font-size: clamp(1.5rem, 1.3125rem + 0.9375vw, 9rem);
+}
